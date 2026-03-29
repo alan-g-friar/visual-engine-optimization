@@ -1,4 +1,4 @@
-# UI/UX Machine Readability
+# UI/UX Machine Readability Framework
 
 Version 1.0  
 Visual Engine Optimization (VEO)  

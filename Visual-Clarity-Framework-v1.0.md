@@ -1,126 +1,132 @@
-# Visual Clarity Framework v1.0
+# Visual Clarity Framework
+
+Version 1.0  
+Visual Engine Optimization (VEO)  
+Specification Baseline — Version 1.0  
 
 ---
 
-## Overview
+## 1. Definition of Visual Clarity  
 
-This document defines the Visual Clarity Framework within Visual Engine Optimization (VEO).
+Visual Clarity is defined as the degree to which visual content maintains sufficient signal integrity to enable reliable detection and recognition by an AI-driven system.  
 
-Visual Clarity refers to the degree to which visual content can be clearly perceived and processed by AI systems without degradation caused by noise, distortion, or ambiguity.
-
-It is a foundational component of Visual Interpretability.
+Visual Clarity is a prerequisite condition for Visual Interpretability.  
 
 ---
 
-## Definition
+## 2. Clarity Factors  
 
-Visual Clarity is defined as:
+### 2.1 Resolution Integrity  
 
-> The degree to which visual content maintains sufficient resolution, contrast, and signal integrity to enable reliable detection and recognition by AI systems.
+The degree to which visual resolution supports accurate detection and recognition.  
 
----
+Includes:  
+- Pixel density  
+- Scaling accuracy  
+- Absence of compression artifacts  
 
-## Core Factors
-
-Visual Clarity is composed of the following primary factors:
-
-### 1. Resolution Integrity
-
-The degree to which image or video resolution supports accurate detection.
-
-Includes:
-- Pixel density
-- Scaling accuracy
-- Absence of compression artifacts
+Failure Condition:  
+- Resolution is insufficient to distinguish objects or features  
 
 ---
 
-### 2. Contrast Definition
+### 2.2 Contrast Definition  
 
-The distinction between elements and their background.
+The degree of distinction between visual elements and their background.  
 
-Includes:
-- Edge visibility
-- Foreground/background separation
-- Color differentiation
+Includes:  
+- Edge visibility  
+- Foreground/background separation  
+- Color differentiation  
 
----
-
-### 3. Noise Control
-
-The absence of visual interference that degrades interpretation.
-
-Includes:
-- Compression noise
-- Motion blur
-- Pixel distortion
+Failure Condition:  
+- Elements cannot be separated due to insufficient contrast  
 
 ---
 
-### 4. Signal Consistency
+### 2.3 Noise Interference  
 
-The stability of visual information across the content.
+The presence of visual artifacts that degrade interpretability.  
 
-Includes:
-- Frame consistency (video)
-- Lighting uniformity
-- Color stability
+Includes:  
+- Compression noise  
+- Motion blur  
+- Pixel distortion  
 
----
-
-## Clarity Conditions
-
-Visual content is considered clear when:
-
-- Objects are visually distinguishable  
-- Edges are defined and detectable  
-- Contrast supports segmentation  
-- Noise does not interfere with recognition  
+Failure Condition:  
+- Noise obscures structural or object-level detail  
 
 ---
 
-## Degraded Clarity Conditions
+### 2.4 Signal Consistency  
 
-Visual content is considered degraded when:
+The stability of visual data across the content.  
 
-- Resolution is insufficient for detection  
-- Contrast is too low or overly saturated  
-- Noise obscures structural detail  
-- Visual signals are inconsistent or unstable  
+Includes:  
+- Lighting uniformity  
+- Color stability  
+- Frame consistency (video)  
+
+Failure Condition:  
+- Variability disrupts consistent interpretation  
 
 ---
 
-## Role Within VEO
+## 3. Clarity Conditions  
 
-Visual Clarity directly impacts:
+Visual content is considered clear when:  
+
+- Objects are distinguishable  
+- Edges are detectable  
+- Contrast enables segmentation  
+- Noise does not interfere with interpretation  
+
+---
+
+## 4. Degraded Clarity Conditions  
+
+Visual content is considered degraded when:  
+
+- Resolution prevents reliable detection  
+- Contrast is insufficient or excessive  
+- Noise interferes with recognition  
+- Signal instability disrupts interpretation  
+
+---
+
+## 5. System Role  
+
+Visual Clarity directly supports:  
 
 - Detectability  
 - Recognizability  
 
-It is a **prerequisite layer** for:
+It is a prerequisite layer for:  
 
 - Structural Coherence  
 - Contextual Alignment  
 
-Without sufficient clarity, higher-order interpretation is unreliable.
+Failure in clarity results in reduced interpretability regardless of higher-level structure.  
 
 ---
 
-## Boundary
+## 6. Boundary  
 
-This framework:
+This specification:  
 
-- Does not define scoring thresholds  
+- Does not define minimum resolution thresholds  
 - Does not define device-specific requirements  
 - Does not define platform optimization rules  
 
-It defines clarity as a structural requirement only.
+It defines clarity as a structural requirement only.  
 
 ---
 
-## Status
+## 7. Version Scope  
 
-This document is part of:
+This document defines Visual Clarity for:  
 
 Visual Engine Optimization (VEO)  
 Specification Baseline Version 1.0  
+
+Any modification requires explicit version increment.  

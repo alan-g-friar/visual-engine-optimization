@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1195346085.svg)](https://doi.org/10.5281/zenodo.19317699)
+
 # Visual Engine Optimization (VEO)
 Specification Baseline — Version 1.0
 Foundational Visibility Framework

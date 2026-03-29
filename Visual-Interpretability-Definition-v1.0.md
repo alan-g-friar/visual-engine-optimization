@@ -1,133 +1,137 @@
-# Visual Interpretability Definition v1.0
+# Visual Interpretability Definition
+
+Version 1.0  
+Visual Engine Optimization (VEO)  
+Specification Baseline — Version 1.0  
 
 ---
 
-## Overview
+## 1. Definition of Visual Interpretability  
 
-This document defines Visual Interpretability within the context of Visual Engine Optimization (VEO).
+Visual Interpretability is defined as the degree to which visual content can be:  
 
-Visual Interpretability refers to the ability of an AI-driven system to:
+- Detected  
+- Recognized  
+- Structurally organized  
+- Contextually understood  
 
-- Detect  
-- Recognize  
-- Structure  
-- Contextualize  
+by an AI-driven system without ambiguity or loss of meaning.  
 
-visual content in a consistent and meaningful way.
-
-This definition establishes the foundational concept upon which all VEO components are built.
+Visual Interpretability represents the primary evaluation axis within VEO.  
 
 ---
 
-## Definition
+## 2. Interpretability Dimensions  
 
-Visual Interpretability is defined as:
+### 2.1 Detectability  
 
-> The degree to which visual content can be accurately detected, structurally understood, and contextually interpreted by an AI system.
+The ability of a system to identify the presence of distinct visual elements.  
 
----
+Includes:  
+- Object presence  
+- Boundary definition  
+- Foreground/background separation  
 
-## Core Dimensions
-
-Visual Interpretability is composed of four primary dimensions:
-
-### 1. Detectability
-
-The ability of a system to identify distinct visual elements.
-
-Includes:
-- Object presence
-- Boundary clarity
-- Separation from background
+Failure Condition:  
+- Objects cannot be reliably distinguished from surrounding visual data  
 
 ---
 
-### 2. Recognizability
+### 2.2 Recognizability  
 
-The ability to classify detected elements correctly.
+The ability of a system to correctly classify detected elements.  
 
-Includes:
-- Object classification
-- Label alignment
-- Feature distinguishability
+Includes:  
+- Object classification  
+- Feature distinction  
+- Label alignment  
 
----
-
-### 3. Structural Coherence
-
-The ability to understand relationships between elements.
-
-Includes:
-- Layout hierarchy
-- Spatial relationships
-- Grouping and segmentation
+Failure Condition:  
+- Detected elements cannot be consistently classified  
 
 ---
 
-### 4. Contextual Alignment
+### 2.3 Structural Coherence  
 
-The ability to interpret meaning within context.
+The ability to interpret relationships between visual elements.  
 
-Includes:
-- Relevance to associated text
-- Scene understanding
-- Semantic consistency
+Includes:  
+- Spatial relationships  
+- Layout hierarchy  
+- Grouping and segmentation  
+
+Failure Condition:  
+- Relationships between elements are ambiguous or inconsistent  
 
 ---
 
-## Interpretability Conditions
+### 2.4 Contextual Alignment  
 
-Visual content is considered interpretable when:
+The ability to interpret visual content within its intended meaning.  
 
-- Objects are clearly distinguishable  
+Includes:  
+- Alignment with associated text  
+- Scene understanding  
+- Semantic consistency  
+
+Failure Condition:  
+- Visual meaning conflicts with contextual or associated information  
+
+---
+
+## 3. Interpretability Conditions  
+
+Visual content is considered interpretable when:  
+
+- Elements are clearly detectable  
+- Classification is consistent  
 - Structural relationships are identifiable  
-- Context aligns with associated metadata or text  
-- No ambiguity prevents consistent interpretation  
+- Contextual meaning is aligned  
 
 ---
 
-## Non-Interpretability Conditions
+## 4. Non-Interpretability Conditions  
 
-Visual content is considered degraded in interpretability when:
+Visual content is considered degraded in interpretability when:  
 
-- Objects are obscured or indistinct  
-- Structural hierarchy is unclear  
-- Context conflicts with associated information  
-- Visual noise reduces detection accuracy  
+- Detection is unreliable  
+- Classification is inconsistent  
+- Structure is ambiguous  
+- Context is conflicting or unclear  
 
 ---
 
-## Role Within VEO
+## 5. System Role  
 
-Visual Interpretability is the **primary evaluation axis** of VEO.
-
-All other components:
+Visual Interpretability serves as the primary evaluation layer for:  
 
 - Visual Clarity  
 - Structural Composition  
 - Semantic Recognition  
-- UI/UX Readability  
+- UI/UX Machine Readability  
 - Multimodal Alignment  
 
-contribute to improving interpretability.
+All VEO components contribute to improving interpretability.  
 
 ---
 
-## Boundary
+## 6. Boundary  
 
-This definition:
+This specification:  
 
-- Does not define scoring mechanisms  
+- Does not define scoring models  
 - Does not define platform-specific behavior  
-- Does not define model-specific interpretation  
+- Does not define implementation methods  
 
-It defines the conceptual foundation only.
+It defines the conceptual evaluation framework only.  
 
 ---
 
-## Status
+## 7. Version Scope  
 
-This document is part of:
+This document defines Visual Interpretability for:  
 
 Visual Engine Optimization (VEO)  
 Specification Baseline Version 1.0  
+
+Any modification requires explicit version increment.  
